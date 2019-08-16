@@ -1,0 +1,115 @@
+/* Переменные */
+@import '../_defaults/variables';
+
+.header {
+  display: flex;
+  align-items: center;
+  flex: 0 0 auto;
+}
+
+.header__props {
+  margin: 0 0 0 auto;
+  display: flex;
+  align-items: center;
+}
+
+.header__social {
+  display: inline-block;
+  
+  img {
+    display: block;
+  }
+}
+
+.header__phone {
+  color: #FFFFFF;
+  font-weight: 500;
+  font-size: 22px;
+  margin: 0 0 0 64px;
+  transition: color 0.08s;
+  
+  .no-touch &:hover {
+    color: $yellow-color;
+  }
+  
+  span:before {
+    content: '•';
+    color: #5E44FA;
+    padding: 0 11px;
+  }
+}
+
+/*==========  Desktop First Method  ==========*/
+
+/* Large Devices, Wide Screens */
+@media only screen and (max-width: 1200px) {
+
+}
+
+/* Medium Devices, Desktops */
+@media only screen and (max-width: 992px) {
+
+}
+
+/* Small Devices, Tablets */
+@media only screen and (max-width: 768px) {
+  .header {
+    flex-wrap: wrap;
+  }
+  
+  .header__logo,
+  .header__props,
+  .header__social{
+    width: 100%;
+    text-align: center;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+  
+  .header__phone {
+    margin: 20px 0 15px;
+  }
+  
+  div.header__social {
+    order: 2;
+    display: none;
+  }
+  
+}
+
+/* Extra Small Devices, Phones */
+@media only screen and (max-width: 480px) {
+
+}
+
+/* Custom, iPhone Retina */
+@media only screen and (max-width: 320px) {
+
+}
+
+/*==========  Mobile First Method  ==========*/
+
+/* Custom, iPhone Retina */
+@media only screen and (min-width: 320px) {
+
+}
+
+/* Extra Small Devices, Phones */
+@media only screen and (min-width: 480px) {
+
+}
+
+/* Small Devices, Tablets */
+@media only screen and (min-width: 768px) {
+
+}
+
+/* Medium Devices, Desktops */
+@media only screen and (min-width: 993px) {
+
+}
+
+/* Large Devices, Wide Screens */
+@media only screen and (min-width: 1200px) {
+
+}
