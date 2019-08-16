@@ -1,7 +1,32 @@
 header.header
-  .header__logo
-    img(src=require('./logo.svg'))
-  .header__props
-    .header__social
-      include ../social/social
-    a.header__phone(href="tel:+79626989603") 8<span>962</span><span>6989603</span>
+  .header__content
+    .header__top
+      .header__menu
+        include ../menu/menu
+      .header__social
+        include ../social/social
+        +social
+    .header__mid
+      include ./header-block/header-block
+    .header__bot
+      .tag
+        .tag__title
+        ul.tag__list
+          li
+            a.tag__link(href="") Все
+          li
+            a.tag__link(href="") #политика
+          li
+            a.tag__link(href="") #маркетинг
+          li
+            a.tag__link(href="") #пиар
+          li
+            a.tag__link(href="") #соцсети
+          li
+            a.tag__link(href="") #instagramm
+          li
+            a.tag__link(href="") #Вконтакте
+          li
+            a.tag__link(href="") #Facebook
+          li
+            a.tag__link(href="") #КРИСТИНААРБАКАЙТЕ

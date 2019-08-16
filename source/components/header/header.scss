@@ -1,42 +1,31 @@
 /* Переменные */
 @import '../_defaults/variables';
+@import 'header-block/header-block';
 
 .header {
+  max-height: 815px;
+  background: url('./components/header/header_bg.png') no-repeat;
+  background-size: contain;
   display: flex;
-  align-items: center;
-  flex: 0 0 auto;
 }
 
-.header__props {
+.header__content {
   margin: 0 0 0 auto;
+  padding: 0 130px 0 0;
+  height: 750px;
+}
+
+.header__top {
   display: flex;
-  align-items: center;
+  padding: 0 98px 0 0;
 }
 
-.header__social {
-  display: inline-block;
-  
-  img {
-    display: block;
-  }
+.header__mid {
+  padding: 72px 0 0 0;
 }
 
-.header__phone {
-  color: #FFFFFF;
-  font-weight: 500;
-  font-size: 22px;
-  margin: 0 0 0 64px;
-  transition: color 0.08s;
-  
-  .no-touch &:hover {
-    color: $yellow-color;
-  }
-  
-  span:before {
-    content: '•';
-    color: #5E44FA;
-    padding: 0 11px;
-  }
+.header__menu {
+  margin: 0 60px 0 0;
 }
 
 /*==========  Desktop First Method  ==========*/
@@ -53,28 +42,7 @@
 
 /* Small Devices, Tablets */
 @media only screen and (max-width: 768px) {
-  .header {
-    flex-wrap: wrap;
-  }
-  
-  .header__logo,
-  .header__props,
-  .header__social{
-    width: 100%;
-    text-align: center;
-    justify-content: center;
-    flex-wrap: wrap;
-  }
-  
-  .header__phone {
-    margin: 20px 0 15px;
-  }
-  
-  div.header__social {
-    order: 2;
-    display: none;
-  }
-  
+
 }
 
 /* Extra Small Devices, Phones */

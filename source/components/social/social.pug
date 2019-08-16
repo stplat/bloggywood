@@ -1,0 +1,8 @@
+mixin social(mod)
+  if mod
+    - var color = `social__link social__link--${mod}`
+
+  .social
+    a.social__link.social__link--insta(href="", class= color)
+    a.social__link.social__link--tele(href="", class= color)
+    a.social__link.social__link--face(href="", class= color)
