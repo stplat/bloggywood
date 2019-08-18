@@ -1,0 +1,106 @@
+/* Переменные */
+@import '../_defaults/variables';
+
+.content {
+  background: url('./components/content/love.svg') no-repeat 27% 25px,
+  url('./components/content/g.svg') no-repeat 94% 568px;
+}
+
+.content__tag {
+  display: flex;
+  justify-content: flex-end;
+  overflow: hidden;
+  padding: 0 11.66% 0 0;
+}
+
+.content__mid {
+  display: flex;
+  align-items: flex-start;
+  margin: 82px 0 0 0;
+  overflow: hidden;
+}
+
+.content__aside {
+  width: 500px;
+  padding: 29px 40px 0 0;
+
+  @media only screen and (max-width: 1468px) {
+    width: 380px;
+    padding: 29px 40px 0 0;
+  }
+}
+
+.content__main {
+  width: calc(100% - 500px);
+  padding: 0 226px 0 0;
+
+  @media only screen and (max-width: 1468px) {
+    width: calc(100% - 380px);
+    padding: 0 80px 0 0;
+  }
+}
+
+.content__list-item {
+  display: flex;
+  flex-wrap: wrap;
+  margin: -20px;
+  max-width: 1170px;
+  justify-content: space-between;
+
+  .item {
+    //flex: 0 0 auto;
+    margin: 20px;
+
+    &:last-child {
+      align-self: flex-start;
+    }
+  }
+}
+
+.content__bot {
+  margin: 90px auto 0;
+  padding: 0 226px;
+
+  @media only screen and (max-width: 1468px) {
+    padding: 0 80px;
+  }
+}
+
+.content__bot-wrap {
+  border-top: 1px solid #ABABAB;
+  align-items: center;
+  display: flex;
+  justify-content: space-between;
+  padding: 20px 0 0;
+}
+
+.content__link-home {
+  font-size: 16px;
+  color: #000000;
+  transition: color 0.08s;
+
+  .no-touch &:hover {
+    color: $orange-color;
+  }
+}
+
+.content__nav {
+  a {
+    color: #000000;
+    transition: color 0.08s;
+
+    &:before {
+      content: '\E801';
+      font-family: $font-icons;
+    }
+
+    &:last-child:before {
+      content: '\E800';
+      margin: 0 0 0 10px;
+    }
+
+    .no-touch &:hover {
+      color: $orange-color;
+    }
+  }
+}

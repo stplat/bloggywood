@@ -1,32 +1,12 @@
 header.header
   .header__content
-    .header__top
-      .header__menu
-        include ../menu/menu
-      .header__social
-        include ../social/social
-        +social
-    .header__mid
-      include ./header-block/header-block
-    .header__bot
-      .tag
-        .tag__title
-        ul.tag__list
-          li
-            a.tag__link(href="") Все
-          li
-            a.tag__link(href="") #политика
-          li
-            a.tag__link(href="") #маркетинг
-          li
-            a.tag__link(href="") #пиар
-          li
-            a.tag__link(href="") #соцсети
-          li
-            a.tag__link(href="") #instagramm
-          li
-            a.tag__link(href="") #Вконтакте
-          li
-            a.tag__link(href="") #Facebook
-          li
-            a.tag__link(href="") #КРИСТИНААРБАКАЙТЕ
+  .header__top
+    .header__logo
+      include ../logo/logo
+    .header__nav
+      include ../nav/nav
+    .header__social
+      include ../social/social
+      +social
+  .header__mid
+    include ./header-block/header-block

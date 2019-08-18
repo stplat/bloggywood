@@ -1,0 +1,17 @@
+.content
+  .content__tag
+    include ../tag/tag
+  .content__mid
+    .content__aside
+      include ../menu/menu
+    .content__main
+      .content__list-item
+        - for (var x = 0; x < 9; x++)
+          include ../item/item
+  .content__bot
+    .content__bot-wrap
+      a.content__link-home(href="") На главную
+      .content__nav
+        a(href="")
+        a(href="")
+

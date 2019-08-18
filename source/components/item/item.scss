@@ -1,0 +1,56 @@
+/* Переменные */
+@import '../_defaults/variables';
+
+.item {
+  max-width: 350px;
+}
+
+.item__image {
+  max-height: 350px;
+  position: relative;
+  border-radius: 10px;
+  overflow: hidden;
+
+  img {
+    height: 100%;
+  }
+}
+
+.item__date {
+  display: inline-block;
+  background: $red-color;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  color: #FFFFFF;
+  border-radius: 3px;
+  width: 100px;
+  padding: 5px 0;
+  text-align: center;
+}
+
+.item__title {
+  margin: 16px 0 20px;
+
+  h2 {
+    font-size: 18px;
+    line-height: 28px;
+    font-weight: 500;
+  }
+}
+
+.item__link {
+
+  a {
+    color: #000000;
+    font-size: 24px;
+    line-height: 26px;
+    //border-bottom: 2px solid transparent;
+    transition: color 0.08s;
+    //display: inline-block;
+
+    .no-touch &:hover {
+      color: $orange-color;
+    }
+  }
+}

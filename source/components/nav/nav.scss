@@ -1,42 +1,31 @@
 /* Переменные */
 @import '../_defaults/variables';
 
-.menu {
-  list-style-type: none;
-  margin: - 18px 0;
+.nav {
+  display: flex;
+  margin: 0 -18px;
 
-  li {
-    display: block;
+  @media (max-width: 992px) {
+    flex-wrap: wrap;
   }
 }
 
-.menu__link {
-  display: inline-flex;
-  align-items: center;
-  color: #000000;
-  font-weight: bold;
+.nav__link {
+  display: inline-block;
   font-size: 18px;
-  line-height: 32px;
-  margin: 18px 0;
-  background: transparent;
-  transition: color 0.08s, background 0.08s;
-  padding: 4px 30px 4px 226px;
+  margin: 0 18px;
+  color: #000000;
+  transition: color 0.08s;
+  white-space: nowrap;
 
-  .no-touch &:hover,
-  &.is-active {
-    color: #FFFFFF;
-    background-color: $orange-color;
+  .no-touch &:hover {
+    color: $orange-color;
   }
-}
 
-/* custom */
-@media only screen and (max-width: 1468px) {
-  .menu__link {
-    padding: 4px 30px 4px 120px;
+  @media (max-width: 992px) {
+    display: block;
+    width: 100%;
   }
-}
-
-@media only screen and (max-width: 1280px) {
 
 }
 

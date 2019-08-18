@@ -1,43 +1,15 @@
 /* Переменные */
 @import '../_defaults/variables';
 
-.menu {
-  list-style-type: none;
-  margin: - 18px 0;
-
-  li {
-    display: block;
-  }
-}
-
-.menu__link {
-  display: inline-flex;
+.footer {
+  padding: 150px 80px 60px;
+  display: flex;
+  justify-content: space-between;
   align-items: center;
-  color: #000000;
-  font-weight: bold;
-  font-size: 18px;
-  line-height: 32px;
-  margin: 18px 0;
-  background: transparent;
-  transition: color 0.08s, background 0.08s;
-  padding: 4px 30px 4px 226px;
-
-  .no-touch &:hover,
-  &.is-active {
-    color: #FFFFFF;
-    background-color: $orange-color;
-  }
 }
 
-/* custom */
-@media only screen and (max-width: 1468px) {
-  .menu__link {
-    padding: 4px 30px 4px 120px;
-  }
-}
-
-@media only screen and (max-width: 1280px) {
-
+.footer__copy {
+  color: #ABABAB;
 }
 
 /*==========  Desktop First Method  ==========*/
