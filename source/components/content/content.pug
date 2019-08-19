@@ -4,10 +4,13 @@
   .content__mid
     .content__aside
       include ../menu/menu
+    .content__button
+      include ../button/button
     .content__main
-      .content__list-item
+      .content__list
         - for (var x = 0; x < 9; x++)
-          include ../item/item
+          .content__item
+            include ../item/item
   .content__bot
     .content__bot-wrap
       a.content__link-home(href="") На главную

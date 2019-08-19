@@ -1,12 +1,51 @@
 /* Переменные */
 @import '../_defaults/variables';
+@import '../_defaults/burger/burger';
 
 .nav {
+
+  @media (max-width: 992px) {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background: rgba(0, 0, 0, 0.6);
+    z-index: 10;
+    display: none;
+  }
+}
+
+.nav__wrap {
   display: flex;
   margin: 0 -18px;
+  align-items: flex-start;
+  list-style-type: none;
 
   @media (max-width: 992px) {
     flex-wrap: wrap;
+    align-content: flex-start;
+    background: #FFFFFF;
+    height: 100%;
+    width: 300px;
+    overflow-y: auto;
+    margin: 0;
+    padding: 145px 0 0 0;
+    right: -100%;
+    position: absolute;
+    transition: right 0.25s;
+
+    &.is-active {
+      right: 0;
+    }
+  }
+}
+
+.nav__item {
+
+  @media (max-width: 992px) {
+    display: block;
+    width: 100%;
   }
 }
 
@@ -25,60 +64,33 @@
   @media (max-width: 992px) {
     display: block;
     width: 100%;
+    text-align: center;
+    font-size: 18px;
+    font-weight: bold;
+    margin: 11px 0;
+    position: relative;
+    z-index: 1;
+    line-height: 40px;
+
+    &:before {
+      content: '';
+      background: transparent;
+      display: block;
+      width: 90%;
+      height: 100%;
+      position: absolute;
+      z-index: -1;
+      transition: background-color 0.08s;
+    }
+
+    .no-touch &:hover {
+      color: #FFFFFF;
+
+      &:before {
+        background: $orange-color;
+      }
+    }
   }
-
 }
 
-/*==========  Desktop First Method  ==========*/
-
-/* Large Devices, Wide Screens */
-@media only screen and (max-width: 1200px) {
-
-}
-
-/* Medium Devices, Desktops */
-@media only screen and (max-width: 992px) {
-
-}
-
-/* Small Devices, Tablets */
-@media only screen and (max-width: 768px) {
-
-}
-
-/* Extra Small Devices, Phones */
-@media only screen and (max-width: 480px) {
-
-}
-
-/* Custom, iPhone Retina */
-@media only screen and (max-width: 320px) {
-
-}
-
-/*==========  Mobile First Method  ==========*/
-
-/* Custom, iPhone Retina */
-@media only screen and (min-width: 320px) {
-
-}
-
-/* Extra Small Devices, Phones */
-@media only screen and (min-width: 480px) {
-
-}
-
-/* Small Devices, Tablets */
-@media only screen and (min-width: 768px) {
-
-}
-
-/* Medium Devices, Desktops */
-@media only screen and (min-width: 993px) {
-
-}
-
-/* Large Devices, Wide Screens */
-@media only screen and (min-width: 1200px) {
-
-}
+@include burger(24px);

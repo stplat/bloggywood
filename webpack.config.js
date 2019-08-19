@@ -28,13 +28,17 @@ const config = merge([
     },
     watch: true,
     plugins: [
-      new webpack.ProvidePlugin({
+      /*new webpack.ProvidePlugin({
         $: 'jquery',
         jQuery: 'jquery',
-      }),
+      }),*/
       new HtmlWebpackPlugin({
         filename: 'index.html',
         template: PATHS.source + '/pages/index.pug',
+      }),
+      new HtmlWebpackPlugin({
+        filename: 'article.html',
+        template: PATHS.source + '/pages/article.pug',
       }),
     ],
   },

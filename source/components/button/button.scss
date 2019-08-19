@@ -1,0 +1,31 @@
+/* Переменные */
+@import '../_defaults/variables';
+
+.button {
+  font-size: 18px;
+  line-height: 54px;
+  color: #FFFFFF;
+  font-weight: bold;
+  background: #2250FF;
+  border-radius: 8px;
+  display: flex;
+  width: 100%;
+  max-width: 320px;
+  justify-content: center;
+  align-items: center;
+
+  &:before {
+    content: 'Фильтр: ';
+    font-weight: normal;
+    display: inline-flex;
+    align-items: center;
+    padding: 0 8px 0 0;
+  }
+
+  &:after {
+    content: '\E805';
+    font-family: $font-icons;
+    padding: 0 0 0 11px;
+    font-size: 14px;
+  }
+}

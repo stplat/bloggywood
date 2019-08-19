@@ -1,12 +1,29 @@
-header.header
-  .header__content
-  .header__top
-    .header__logo
-      include ../logo/logo
-    .header__nav
-      include ../nav/nav
-    .header__social
-      include ../social/social
-      +social
-  .header__mid
-    include ./header-block/header-block
+mixin header
+  header.header
+    .header__content
+    .header__top
+      .header__logo
+        include ../logo/logo
+      .header__nav
+        a.header__callback(href="") Заказать звонок
+        include ../nav/nav
+      .header__social
+        include ../social/social
+        +social
+    .header__mid
+      include ./header-block/header-block
+
+mixin header-article
+  header.header.header--article
+    .header__content
+    .header__top
+      .header__logo
+        include ../logo/logo
+      .header__nav
+        a.header__callback(href="") Заказать звонок
+        include ../nav/nav
+      .header__social
+        include ../social/social
+        +social
+    .header__mid
+      include ./header-block/header-block

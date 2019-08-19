@@ -1,7 +1,6 @@
 /* Переменные */
 @import 'variables';
 @import '~normalize.css';
-@import 'animated.scss';
 
 /* Общие стили */
 * {
@@ -62,15 +61,17 @@ a {
   body {
     cursor: pointer;
   }
-}
 
-/* Small Devices, Tablets */
-@media only screen and (max-width: 768px) {
   body.is-popup {
     position: fixed;
     overflow: hidden;
     width: 100%;
   }
+}
+
+/* Small Devices, Tablets */
+@media only screen and (max-width: 768px) {
+
 }
 
 /* Extra Small Devices, Phones */

@@ -5,6 +5,10 @@
   list-style-type: none;
   margin: - 18px 0;
 
+  @media (max-width: 940px) {
+    display: none;
+  }
+
   li {
     display: block;
   }
@@ -27,69 +31,12 @@
     color: #FFFFFF;
     background-color: $orange-color;
   }
-}
 
-/* custom */
-@media only screen and (max-width: 1468px) {
-  .menu__link {
+  @media (max-width: 1468px) {
     padding: 4px 30px 4px 120px;
   }
-}
 
-@media only screen and (max-width: 1280px) {
-
-}
-
-/*==========  Desktop First Method  ==========*/
-
-/* Large Devices, Wide Screens */
-@media only screen and (max-width: 1200px) {
-
-}
-
-/* Medium Devices, Desktops */
-@media only screen and (max-width: 992px) {
-
-}
-
-/* Small Devices, Tablets */
-@media only screen and (max-width: 768px) {
-
-}
-
-/* Extra Small Devices, Phones */
-@media only screen and (max-width: 480px) {
-
-}
-
-/* Custom, iPhone Retina */
-@media only screen and (max-width: 320px) {
-
-}
-
-/*==========  Mobile First Method  ==========*/
-
-/* Custom, iPhone Retina */
-@media only screen and (min-width: 320px) {
-
-}
-
-/* Extra Small Devices, Phones */
-@media only screen and (min-width: 480px) {
-
-}
-
-/* Small Devices, Tablets */
-@media only screen and (min-width: 768px) {
-
-}
-
-/* Medium Devices, Desktops */
-@media only screen and (min-width: 993px) {
-
-}
-
-/* Large Devices, Wide Screens */
-@media only screen and (min-width: 1200px) {
-
+  @media (max-width: 1200px) {
+    padding: 4px 30px 4px 50px;
+  }
 }
