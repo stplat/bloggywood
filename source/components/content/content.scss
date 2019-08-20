@@ -166,22 +166,26 @@
 }
 
 .content__nav {
-  a {
+  .content__nav-prev,
+  .content__nav-next {
     color: #000000;
     transition: color 0.08s;
 
     &:before {
-      content: '\E801';
       font-family: $font-icons;
-    }
-
-    &:last-child:before {
-      content: '\E800';
-      margin: 0 0 0 10px;
     }
 
     .no-touch &:hover {
       color: $orange-color;
     }
+  }
+
+  .content__nav-prev:before {
+    content: '\E801';
+  }
+
+  .content__nav-next:before {
+    content: '\E800';
+    margin: 0 0 0 10px;
   }
 }
