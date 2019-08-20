@@ -42,10 +42,10 @@ const config = merge([
       }),
     ],
   },
+  images(),
   pug(),
   lintJS({paths: PATHS.sources}),
   lintCSS(),
-  images(),
   babel(),
 ]);
 

@@ -26,6 +26,7 @@
 /* Модификатор для страницы Article.html*/
 .header--article {
   height: auto !important;
+  background-image: none;
 }
 
 .header__top {
@@ -72,6 +73,11 @@
   @media (max-width: 480px) {
     margin: 26px 0 0 0;
   }
+}
+
+/* Модификатор для страницы Article.html*/
+.header__mid--article {
+  display: none;
 }
 
 .header__nav {

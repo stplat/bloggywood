@@ -2,8 +2,10 @@ extends _layout
 
 block header
   include ../components/header/header
+  +header-article
 block content
-
+  include ../components/post/post
+  include ../components/features/features
 block footer
   include ../components/footer/footer
 
