@@ -3,6 +3,7 @@
 @import '../_defaults/burger/burger';
 
 .nav {
+  display: block;
 
   @media (max-width: 992px) {
     position: fixed;

@@ -52,7 +52,7 @@
 .post__image-desc,
 .post .wp-caption-text {
   text-align: center;
-  margin: 20px 0;
+  margin: 20px 24px;
   font-size: 14px;
 }
 
@@ -141,8 +141,8 @@
   p {
     margin: 20px 60px;
 
-    & > img {
-      margin: 0 0 0 -60px;
+    &:first-child {
+      margin: 0;
     }
   }
 
@@ -178,6 +178,12 @@
 
   @media (max-width: 375px) {
     font-size: 12px;
+
+    p,
+    ul,
+    ol {
+      margin: 20px 24px;
+    }
   }
 }
 
@@ -212,4 +218,35 @@
       color: #FFFFFF;
     }
   }
+}
+
+.post__comment {
+  margin: 60px auto 0;
+  max-width: 660px;
+  width: 100%;
+
+  @media (max-width: 768px) {
+    padding: 0 24px;
+  }
+}
+
+/* Images */
+.entry-content img,
+.comment-content img,
+.widget img {
+  max-width: 100%; /* Fluid images for posts, comments, and widgets */
+}
+
+img[class*="align"],
+img[class*="wp-image-"] {
+  height: auto; /* Make sure images with WordPress-added height and width >attributes are scaled correctly */
+}
+
+img.size-full {
+  max-width: 100%;
+  width: auto; /* Prevent stretching of full-size images with height and >>width attributes in IE8 */
+}
+
+div[class*='wp-caption'] {
+  width: auto;
 }

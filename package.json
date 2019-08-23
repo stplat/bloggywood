@@ -37,7 +37,8 @@
     "webpack-merge": "^4.1.4"
   },
   "dependencies": {
-    "normalize.css": "^8.0.0"
+    "normalize.css": "^8.0.0",
+    "parallax-js": "^3.1.0"
   },
   "browserslist": [
     "> 1%",

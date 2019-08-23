@@ -2,8 +2,9 @@
 @import '../_defaults/variables';
 
 .content {
-  background: url('./components/content/love.svg') no-repeat 27% 40px,
+  background: url('./components/content/love.gif') no-repeat 24% 20px,
   url('./components/content/g.svg') no-repeat 94% 568px;
+  background-size: 10%, auto;
 
   @media (max-width: 1280px) {
     background-size: 104px auto;

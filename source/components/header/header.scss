@@ -18,13 +18,13 @@
   }
 
   @media (max-width: 480px) {
-    height: 370px;
-    background-position: -170px 40px;
+    height: 370px!important;
+    background-position: -170px 40px!important;
   }
 }
 
 /* Модификатор для страницы Article.html*/
-.header--article {
+.header.header--article {
   height: auto !important;
   background-image: none;
 }
